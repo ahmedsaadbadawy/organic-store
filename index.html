@@ -12,14 +12,46 @@
         @theme {
           --font-headings: "Merriweather", serif;
           --font-body: "Open Sans", sans-serif;
-          --color-primary: #6A9739;
+          --color-primary: #8bc34a;
+          --color-background: #f8f6f3;
       }
     </style>
 </head>
 
 <body>
-    <i class="fa-solid fa-basket-shopping"></i>
-    <h1>Ahmed</h1>
+    <section class="hero-section">
+        <header class="hero-header">
+            <div class="my-container my-3.5 flex items-center justify-between gap-4">
+                <div class="logo w-37.5">
+                    <img src="./public/assets/images/imgi_1_organic-store-logo5.svg" alt="logo">
+                </div>
+                <nav class="max-md:hidden">
+                    <ul class="flex items-center gap-2 [&>li>a]:hover:text-primary [&_a]:p-4">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Everything</a></li>
+                        <li><a href="#">Groceries</a></li>
+                        <li><a href="#">Juice</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="cart-and-account max-md:hidden flex items-center gap-4">
+                    <div class="font-bold text-primary">£0.00</div>
+                    <div class="cart text-primary relative">
+                        <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                        <span class="absolute -top-2 -right-2 bg-primary font-bold text-black text-xs w-4 h-4 flex items-center justify-center rounded-full">0</span>
+                    </div>
+                    <div class="account">
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </div>
+                </div>
+                <div class="menu-icon md:hidden">
+                    <div class="icon text-white bg-primary p-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
 </body>
 
 </html>

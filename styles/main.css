@@ -6,6 +6,7 @@
   --font-headings;
   --font-body;
   --color-primary;
+  --color-background;
 }
 
 h1,
@@ -22,13 +23,13 @@ body {
 }
 
 .my-container {
-  padding-inline: 5.625rem;
+  padding-inline: 10rem;
   margin-inline: auto;
 }
 
 
-@media (max-width: 768px) {
-  .my-wide-container {
+@media (max-width: 1200px) {
+  .my-container {
     padding-inline: 1.25rem;
   }
 }
