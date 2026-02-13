@@ -18,8 +18,13 @@ h6 {
   font-family: "Merriweather", serif;
 }
 
+p {
+  color: #333333;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+  height: 1000vh;
 }
 
 .my-container {
@@ -27,9 +32,41 @@ body {
   margin-inline: auto;
 }
 
+.my-background-image {
+  background-repeat: no-repeat;
+  background-size: 28%;
+  /* background-position: right 20px bottom 20px; */
+  position: absolute;
+  inset: 0;
+}
+
+.green-button{
+    padding: 0.8rem 2.2rem;
+    width: fit-content;
+    background-color:#6A9739;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.green-button:hover{
+    background-color: #8bc34a;
+}
 
 @media (max-width: 1200px) {
   .my-container {
     padding-inline: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html{
+    font-size: 90%;
   }
 }
