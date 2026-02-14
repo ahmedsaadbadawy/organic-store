@@ -74,8 +74,12 @@ body {
     background: url("../public/assets/images/imgi_3_logo-leaf-new.png") no-repeat center;
     background-size: contain;
 }
+.subtitle{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .my-container {
     padding-inline: 1.25rem;
   }
