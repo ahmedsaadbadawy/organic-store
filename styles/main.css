@@ -24,7 +24,7 @@ p {
 
 body {
   font-family: "Open Sans", sans-serif;
-  height: 1000vh;
+  /* height: 1000vh; */
 }
 
 .my-container {
@@ -79,6 +79,14 @@ body {
   font-weight: bold;
 }
 
+.footer-item{
+  color: rgba(255, 255, 255, 0.66);
+  transition: color 0.2s linear;
+}
+.footer-item:hover{
+  color: #fefefe;
+}
+
 @media (max-width: 1250px) {
   .my-container {
     padding-inline: 1.25rem;
@@ -87,6 +95,6 @@ body {
 
 @media (max-width: 768px) {
   html{
-    font-size: 90%;
+    font-size: 85%;
   }
 }
